@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+body{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-family: 'Sofia Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(247,253,252);
+}
+
+span{
+  width: 159px;
+  height: 14px;
+  color: black;
+}
+
+.right_section{
+  width: 50%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 6px; 
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+.left_section{
+  width: 50%;
+}
+
+.left_section h1{
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+.left_section img{
+  width: 77.33px;
+  height: 80px;
+}
+
+.left_section p {
+  width: 90%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.container form .user_details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+form .user_details .input_box{
+  margin: 15px 0 15px 0;
+  width: calc(100% / 2 - 10px);
+ 
+}
+
+.user_details .input_box input{
+  height: 48px;
+  width: 100%;
+}
+
+.user_details .input_box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  
+}
+.user_details .input_box input{
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid rgb(224, 223, 223);
+  padding-left: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  
+}
+
+select{
+  height: 48px;
+  width: 100%;
+  color: grey;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid rgb(224, 223, 223);
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+form .button{
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  background-color: rgb(46,196,182);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.user_details .input_box input:focus, select:focus, .input_box1 input:focus{
+  border: 1px solid rgb(46,196,182);
+}
+
+.input_box1 input{
+  width: 100%;
+  height: 48px;
+  outline: none;
+  border-radius: 2px;
+  padding-left: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  border: 1px solid rgb(224, 223, 223);
+}
+
+.input_box1{
+  margin-top: 30px;
+  position: relative;
+}
+.levels{
+  margin-top: 20px;
+}
+.special{
+  margin-block-start: 20px;
+}
+
+.eye{
+  position: absolute;
+  right: 18px;
+  top: 45px;
+}
+
+a{
+  color: rgb(46,196,182);
+}
+
+.foot{
+  text-align: center;
+}
+
+.outside, .big, .small{
+  display: none;
+}
+
+  .container {
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container{
+      flex-direction: column;
+      width: 100%;
+    }
+    .left_section, .right_section{
+      width: 90%;
+    }
+    .right_section{
+      margin-block-start: 40px;
+    }
+    .outside, .big{
+      display: block;
+      margin-block: 20px;
+    }
+    .inside, .small{
+      display: none;
+    }
+    
+  }
+
+  @media screen and (max-width: 500px) {
+    form .user_details .input_box{
+      width: 100%;
+    }
+
+    .big{
+      display: none;
+    }
+
+    .small{
+      display: block;
+      margin-block: 20px;
+    }
+   
+  }
+  @media screen and (min-width: 800px) {
+    .left_section, .right_section{
+      width: 100%;
+    }
+    .big{
+      display: block;
+      margin-block: 20px;
+    }
+  }
+ 
